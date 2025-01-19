@@ -1,0 +1,73 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "How are you?",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hello, thanks for visiting",
+        "Good to see you again",
+        "Hi there, how can I help?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "troubleshoot_slow_computer",
+      "patterns": [
+        "My computer is slow",
+        "Why is my computer running slow?",
+        "How can I speed up my computer?"
+      ],
+      "responses": [
+        "Try restarting your computer.",
+        "Check for any software updates.",
+        "Make sure you don't have too many programs running at once."
+      ]
+    },
+    {
+      "tag": "troubleshoot_no_internet",
+      "patterns": [
+        "I can't connect to the internet",
+        "Why is my internet not working?",
+        "How do I fix my internet connection?"
+      ],
+      "responses": [
+        "Check if your Wi-Fi is turned on.",
+        "Restart your router.",
+        "Check if other devices can connect to the internet."
+      ]
+    },
+    {
+      "tag": "troubleshoot_printer",
+      "patterns": [
+        "My printer is not working",
+        "Why won't my printer print?",
+        "How do I fix my printer?"
+      ],
+      "responses": [
+        "Make sure your printer is turned on.",
+        "Check if the printer is connected to your computer.",
+        "Try restarting your printer."
+      ]
+    }
+  ]
+}
