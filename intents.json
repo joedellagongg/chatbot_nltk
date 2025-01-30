@@ -1,6 +1,6 @@
 {
   "intents": [
-    {
+      {
       "tag": "greeting",
       "patterns": [
         "Hi",
@@ -27,7 +27,7 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful"],
+      "patterns": ["Thanks", "Thank you", "That's helpful", "ty", "tnx"],
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
     {
@@ -38,9 +38,7 @@
         "How can I speed up my computer?"
       ],
       "responses": [
-        "Try restarting your computer.",
-        "Check for any software updates.",
-        "Make sure you don't have too many programs running at once."
+        "\nPossible solutions:\n- Try restarting your computer.\n- Check for any software updates.\n- Make sure you don't have too many programs running at once."
       ]
     },
     {
@@ -48,7 +46,8 @@
       "patterns": [
         "I can't connect to the internet",
         "Why is my internet not working?",
-        "How do I fix my internet connection?"
+        "How do I fix my internet connection?",
+        "No wifi"
       ],
       "responses": [
         "Check if your Wi-Fi is turned on.",
@@ -68,6 +67,210 @@
         "Check if the printer is connected to your computer.",
         "Try restarting your printer."
       ]
+    },
+    {
+      "tag": "troubleshoot_phone_slow",
+      "patterns": [
+        "slow phone",
+        "My phone takes too much time to charge",
+        "Apps keep crashing"
+      ],
+      "responses": [
+        "Make sure to clear your app cache data.",
+        "If your phone isn't charging, the most likely culprits are a faulty charging cable, a dirty charging port on your phone, a damaged power adapter, or a problem with the power outlet itself; try using a different charging cable and power adapter, clean the charging port on your phone, and ensure the cable is securely plugged into both the phone and adapter; if the issue persists, you may need to get your phone checked by a professional as there could be a deeper battery or hardware problem.",
+        "The first thing you should try is to restart your cell phone and start using the app again. You can also go to the App Manager and stop the app, sometimes cleaning the cache data also works. If it continues doing the same, try to uninstall the app and install it again. As it was mentioned before, sometimes the app has a lot of bugs that cause this problem."
+      ]
+    },
+    {
+      "tag": "no_sound",
+      "patterns": [
+          "There's no sound on my computer.",
+          "My phone has no audio.",
+          "Why can't I hear anything from my speakers?",
+          "How do I fix sound problems on my computer?",
+          "Hey, I'm having trouble with my audio.",
+          "The audio on my computer is not working."
+      ],
+      "responses":[
+          "Make sure your system volume and application volume are turned up and not muted.",
+          "Check your system settings to ensure the correct audio output device is selected.",
+          "Double-check that your headphones or speakers are properly plugged in and the cables aren't damaged.",
+          "Outdated audio drivers can cause issues, so try updating them through your device manager.",
+          "Try restarting the device to reset audio functionality."
+
+      ]
+    },
+    {
+      "tag":"screen_issues",
+      "patterns":[
+          "flickering",
+          "glitching",
+          "flicker",
+          "My phone screen is frozen.",
+          "black screen",
+          "How do I fix display issues?",
+          "Why is my screen black even though my device is on?"
+      ],
+      "responses":[
+          "Try restarting your device to refresh the screen.",
+          "Update your display drivers or check for system updates.",
+          "Check for loose connections if you're using a monitor.",
+          "If your screen is frozen, try a force restart.",
+          "Ensure the brightness isn’t set to the lowest level",
+          "Check if the device is connected to a power source and the battery isn’t dead.",
+          "If using an external monitor, verify the cable connections and power."
+      ]
+    },
+    {
+      "tag":"device_full_storage",
+      "patterns":[
+          "Why is my device saying it's out of storage even though I deleted files?",
+          "How can I free up space on my phone?",
+          "How can I free up space on my computer?"
+         
+      ],
+      "responses":[
+          "Clear temporary files and cache.",
+          "Delete unnecessary files, apps, or photos to free up space.",
+          "Transfer large files to an external drive or cloud storage."
+      ]
+    },
+    {
+      "tag":"software_update",
+      "patterns":[
+          "How do I update my computer?",
+          "My phone won't update.",
+          "Why is my software update failing?"
+      ],
+      "responses":[
+          "Go to your device settings and check for available updates.",
+          "Make sure you have enough storage and battery for the update.",
+          "Ensure you have a stable internet connection while updating."
+      ]
+    },
+    {
+      "tag":"overheating_phone",
+      "patterns":[
+          "Why is my phone overheating?",
+          "How do I stop my phone from overheating?",
+          "What should I do if my phone get hot while charging?",
+          "How do I cool down my phone when it's overheating?"
+      ],
+      "responses":[
+          "Too many apps running simultaneously can increase the workload and generate heat.",
+          "Close apps running in the background to reduce workload.",
+          "A phone gets hot while charging because the battery naturally generates heat during the charging process, especially when using fast charging; however, excessive heat could indicate issues like a damaged charging cable, a worn-out battery, or too many active background apps; to fix this, try using a different charger, removing your phone case, closing unnecessary apps, avoiding direct sunlight, and checking for any potential damage to the charging port or battery.",
+          "To cool down your phone when it's overheating, turn it off to stop any processes generating heat. Remove any case or cover to allow better airflow. Place it on a flat, hard surface away from direct sunlight or heat sources. Avoid using it for heavy tasks like gaming or streaming while it cools. You can also try closing unused apps running in the background. If the phone continues to overheat, check if any apps are consuming excessive resources and consider restarting the phone to refresh its system."
+      ]
+    },
+    {
+      "tag": "troubleshoot_slow_internet",
+      "patterns": [
+      "How do I troubleshoot slow internet connection",
+      "Can’t connect to the internet",
+      "Why can’t I save my documents"
+      ],
+      "responses": [
+      "See if the router is fixed",
+      "Check data/Wi-Fi connection",
+      "Try to restart your Wi-Fi connection",
+      "Kindly restart your laptop",
+      "Troubleshoot internet connection"
+      ]
+    },
+    {
+      "tag": "change_user",
+      "patterns": [
+      "Can't change email",
+      "I want to add user profile in my desktop",
+      "Forgot Password",
+      "Forgot Email",
+      "Can't find my documents"
+      ],
+      "responses": [
+      "Restart your Pc and try again! \n Put number for the code \n Create email HAHAHAHAHHAHAHAHAHAHAHAHAH",
+      "Put number for the code",
+      "Change the Email and refresh the page for changes.",
+      "Will send you an authentication code",
+      "Check if user tab is correct."
+      ]
+    },
+    {
+      "tag": "Chrome Profile",
+      "patterns": [
+      "Can't retrieve my browsing history",
+      "I lost all my bookmarks",
+      "Retrieve history from other profiles",
+      "Chrome Profile error"
+      ],
+
+      "responses": [
+      "Relaunch Chrome",
+      "Make sure sync is on",
+      "Remove then sign in again"
+      ]
+    },
+    {
+      "tag": "bluetooth",
+      "patterns": [
+      "Unable to send/receive any files",
+      "Desktop is not reading my bluetooth device",
+      "Unable to paired my device",
+      "Reason why can't I add my bluetooth earphone",
+      "My wireless keyboard/mouse won't connect",
+      "How can I add bluetooth devices?",
+      "Connection Unsuccesful"
+      ],
+      "responses": [
+      "Make sure bluetooth is turned on",
+      "Make sure your bluetooth device is discoverable and in range.",
+      "Try to restart your phone/pc",
+      "Forget and pair your bluetooth device again.",
+      "Check your drivers in device manager.",
+      "Unlugged and plugged your input device",
+      "Choose the correct kind of device and select to connect"
+      ]
+    },
+    {
+      "tag": "notifications",
+      "patterns": [
+      "I cant't receive any notifications",
+      "How do I stop any unwanted notifications?",
+      "Notifications is not delivered immediately"
+      ],
+      "responses": [
+      "Make sure access is enabled",
+      "You can on/off your notifications from any apps",
+      "Allow notifications from this app.",
+      "Make sure Time Sensitive Notifications is on"
+      ]
+    },
+    {
+      "tag": "privacy_location",
+      "patterns": [
+      "How to fix the issue for my location services in apps?",
+      "What can I do to not to track my location",
+      "I want no one will know my location"
+      ],
+      "responses": [
+      "Make sure Locaton Services is on",
+      "Enabled/Disabled location any time",
+      "You can fix the issue by changing the country or region",
+      "Make sure you allow location access"
+      ]
+    },
+    {
+      "tag": "speakers",
+      "patterns": [
+      "No sound in my speakers even if it's 100%",
+      "How to fix the sound?."
+      ],
+      "responses": [
+      "Change access for this device.",
+      "Go to Settings if the app is access allowed.",
+      "Allow access to use the microphone."
+      ]
+
     }
   ]
 }
