@@ -1,6 +1,6 @@
 {
   "intents": [
-      {
+    {
       "tag": "greeting",
       "patterns": [
         "Hi",
@@ -84,85 +84,107 @@
     {
       "tag": "no_sound",
       "patterns": [
-          "There's no sound on my computer.",
-          "My phone has no audio.",
-          "I can't hear anything from my speakers",
-          "I want t fix sound problems on my computer",
-          "Hey, I'm having trouble with my audio.",
-          "The audio on my computer is not working."
+        "There's no sound on my computer.",
+        "My phone has no audio.",
+        "I can't hear anything from my speakers",
+        "I want t fix sound problems on my computer",
+        "I'm having trouble with my audio.",
+        "The audio on my computer is not working."
       ],
-      "responses":[
-          "Make sure your system volume and application volume are turned up and not muted.",
-          "Check your system settings to ensure the correct audio output device is selected.",
-          "Double-check that your headphones or speakers are properly plugged in and the cables aren't damaged.",
-          "Outdated audio drivers can cause issues, so try updating them through your device manager.",
-          "Try restarting the device to reset audio functionality."
-
+      "responses": [
+        "Make sure your system volume and application volume are turned up and not muted.",
+        "Check your system settings to ensure the correct audio output device is selected.",
+        "Double-check that your headphones or speakers are properly plugged in and the cables aren't damaged.",
+        "Outdated audio drivers can cause issues, so try updating them through your device manager.",
+        "Try restarting the device to reset audio functionality."
       ]
     },
     {
-      "tag":"screen_issues",
-      "patterns":[
-          "flickering",
-          "glitching",
-          "flicker",
-          "My phone screen is frozen.",
-          "black screen",
-          "Fix display issues",
-          "My screen black even though my device is on"
+      "tag": "screen_issues",
+      "patterns": [
+        "flickering",
+        "glitching",
+        "flicker",
+        "My phone screen is frozen.",
+        "black screen",
+        "Fix display issues",
+        "My screen black even though my device is on"
       ],
-      "responses":[
-          "Try restarting your device to refresh the screen.",
-          "Update your display drivers or check for system updates.",
-          "Check for loose connections if you're using a monitor.",
-          "If your screen is frozen, try a force restart.",
-          "Ensure the brightness isn’t set to the lowest level",
-          "Check if the device is connected to a power source and the battery isn’t dead.",
-          "If using an external monitor, verify the cable connections and power."
+      "responses": [
+        "If you're experiencing screen flickering, start by restarting your device to give it a fresh start. If the problem persists, check for any pending software updates, as these can sometimes address display-related bugs or glitches. If you're using a monitor, make sure all cables are securely connected, and try using a different cable or port to rule out hardware issues.",
+        "If your display is glitching, it could be a result of outdated software or a malfunctioning graphics driver. Try updating your display drivers through your device's settings or check for any available system updates. If the problem happens with specific apps, make sure they're updated too, as some glitches can be app-specific. Additionally, performing a device restart can help resolve temporary software issues.",
+        "A flickering screen might be caused by a mismatch in display settings or a power supply issue. If your screen flickers only when you're running certain apps or programs, try closing them to see if that resolves the issue. If your device is overheating, it could also cause flickering, so check if it's excessively hot and allow it to cool down. If the issue is persistent, consider adjusting your screen refresh rate or resolution settings to match the device's specifications.",
+        "If your phone screen is frozen, a force restart can often solve the issue. On most smartphones, you can do this by holding down the power button and volume down button (or the corresponding combination for your device) for about 10-15 seconds. If the phone continues to freeze, you might want to check for software updates or perform a factory reset as a last resort if the issue persists.",
+        "If you're seeing a black screen but the device is still on, it could indicate an issue with the display itself or a software malfunction. Start by adjusting the brightness settings—sometimes the display might be on but too dim to see. If that doesn't help, try restarting the device or performing a soft reset. In cases where the screen remains black, a screen replacement or repair might be necessary if it's a hardware issue.",
+        "To fix display issues, ensure that your screen's brightness settings are adjusted appropriately, and check for any potential screen protectors or cases that might be obstructing the display. If you're experiencing blackouts or flickering, check whether the device is connected to a power source. If your battery is low or dead, it might cause display issues. Try charging your device fully and restarting it to see if that resolves the problem.",
+        "If you're using an external monitor and the screen stays black, check the power connection first—ensure the monitor is turned on and the cables are securely plugged in. Try using different cables or ports, as faulty cables can lead to screen issues. If the issue persists, test the monitor on another device to determine if the problem lies with the monitor or the original device."
       ]
     },
     {
-      "tag":"device_full_storage",
-      "patterns":[
-          "My device says it's out of storage even after deleting files",
-          "I want to know how to free up space on my phone",
-          "I want to know how to free up space on my computer"
-         
+      "tag": "device_full_storage",
+      "patterns": [
+        "full storage",
+        "full storage device",
+        "full storage HDD",
+        "My device says it's out of storage even after deleting files",
+        "I want to know how to free up space on my phone",
+        "I want to know how to free up space on my computer",
+        "My device is full, how do I make more space?",
+        "How can I free up storage on my phone?",
+        "What should I do when my computer is running out of storage?"
       ],
-      "responses":[
-          "Clear temporary files and cache.",
-          "Delete unnecessary files, apps, or photos to free up space.",
-          "Transfer large files to an external drive or cloud storage."
+      "responses": [
+        "It sounds frustrating when you're out of space! First, check for temporary files or cached data—these often take up a lot of space without you even knowing. You can clear them through your device's settings or app preferences.",
+        "If you're still having trouble, try deleting any apps, files, or photos you no longer need. Alternatively, consider transferring large files like videos or documents to an external drive or cloud storage. This will help free up local space.",
+        "For phones and computers, many devices have built-in storage managers that can guide you through the cleanup process. You could also look into using storage optimization tools that automatically remove files you don't need, like duplicate files or unused app data.",
+        "If your storage is consistently full and you're looking for better performance, consider upgrading to an SSD. Replacing an old hard drive with an SSD can dramatically speed up your device while giving you more space. You can back up your important data and use the old storage as a personal backup drive or external storage. This way, you keep your files safe while improving your system's speed and efficiency!"
       ]
     },
     {
-      "tag":"software_update",
-      "patterns":[
-          "I want to know how to update my computer",
-          "My phone won't update.",
-          "My software update failing"
+      "tag": "software_update",
+      "patterns": [
+        "I want to know how to update my computer",
+        "My phone won't update.",
+        "My software update failing"
       ],
-      "responses":[
-          "Go to your device settings and check for available updates.",
-          "Make sure you have enough storage and battery for the update.",
-          "Ensure you have a stable internet connection while updating."
+      "responses": [
+        "Go to your device settings and check for available updates.",
+        "Make sure you have enough storage and battery for the update.",
+        "Ensure you have a stable internet connection while updating."
       ]
     },
     {
-      "tag":"overheating_phone",
-      "patterns":[
-          "My phone overheating",
-          "Stop my phone from overheating",
-          "My phone get hot while charging",
-          "Cool down my phone when it's overheating"
+      "tag": "device_component_upgrade",
+      "patterns": [
+        "My device is slow",
+        "Upgrade my computer parts",
+        "Replace old components for better performance",
+        "My storage is full and slowing down my device",
+        "What to do if my battery drains fast?",
+        "My laptop is lagging, how can I fix it?"
       ],
-      "responses":[
-          "Too many apps running simultaneously can increase the workload and generate heat.",
-          "Close apps running in the background to reduce workload.",
-          "A phone gets hot while charging because the battery naturally generates heat during the charging process, especially when using fast charging; however, excessive heat could indicate issues like a damaged charging cable, a worn-out battery, or too many active background apps; to fix this, try using a different charger, removing your phone case, closing unnecessary apps, avoiding direct sunlight, and checking for any potential damage to the charging port or battery.",
-          "To cool down your phone when it's overheating, turn it off to stop any processes generating heat. Remove any case or cover to allow better airflow. Place it on a flat, hard surface away from direct sunlight or heat sources. Avoid using it for heavy tasks like gaming or streaming while it cools. You can also try closing unused apps running in the background. If the phone continues to overheat, check if any apps are consuming excessive resources and consider restarting the phone to refresh its system."
+      "responses": [
+        "If your device is slowing down, it might be time to upgrade some key components. One of the best upgrades is replacing an old hard disk drive (HDD) with a solid-state drive (SSD), which can drastically improve boot times and overall speed. If your device supports it, adding more RAM can also enhance multitasking performance, making your computer run more smoothly when handling multiple apps or browser tabs. If your processor is outdated and slowing things down, you may want to consider upgrading it, but be sure to check compatibility with your motherboard first.",
+        "A worn-out battery can cause your phone or laptop to drain quickly, overheat, or even shut down unexpectedly. If your device is no longer holding a charge as well as it used to, replacing the battery can restore its usability. Before upgrading, check your battery health in your device settings to confirm if it's degraded. Using an official or high-quality replacement battery is essential for safety and longevity. If your device has a non-removable battery, you may need professional help to replace it properly.",
+        "If your storage is full and your device is running slowly, upgrading to a larger and faster storage drive can make a significant difference. An SSD is a great option for boosting speed and performance compared to a traditional HDD. You can also expand storage by using an external hard drive or cloud storage to offload large files such as videos, photos, and documents. If upgrading isn’t an option, try deleting unnecessary files, clearing cache, or using disk cleanup tools to free up space and improve system performance.",
+        "Overheating can cause performance issues and reduce the lifespan of your device. If your laptop or desktop is getting too hot, consider upgrading its cooling system. Cleaning the internal fans, replacing old thermal paste on the CPU, and adding extra cooling solutions like additional fans or a better heatsink can help regulate temperature. For laptops, using a cooling pad can also improve airflow and prevent overheating during heavy usage. Regular maintenance, such as dusting out vents and ensuring proper airflow, can keep your device running at optimal temperatures.",
+        "If you're into gaming or high-performance tasks such as video editing or 3D rendering, upgrading your graphics card (GPU) and increasing your RAM can drastically improve performance. A more powerful GPU will provide smoother visuals and faster rendering, while additional RAM will help with multitasking and data-heavy applications. Before upgrading, make sure your power supply unit (PSU) can support the new components and that your system has enough space and compatibility for the upgrade. If you're unsure, checking system requirements or consulting a professional can help you make the right choice."
+      ]
+    },
+    {
+      "tag": "overheating_phone",
+      "patterns": [
+        "My phone overheating",
+        "Stop my phone from overheating",
+        "My phone get hot while charging",
+        "Cool down my phone when it's overheating"
+      ],
+      "responses": [
+        "Too many apps running simultaneously can increase the workload and generate heat.",
+        "Close apps running in the background to reduce workload.",
+        "A phone gets hot while charging because the battery naturally generates heat during the charging process, especially when using fast charging; however, excessive heat could indicate issues like a damaged charging cable, a worn-out battery, or too many active background apps; to fix this, try using a different charger, removing your phone case, closing unnecessary apps, avoiding direct sunlight, and checking for any potential damage to the charging port or battery.",
+        "To cool down your phone when it's overheating, turn it off to stop any processes generating heat. Remove any case or cover to allow better airflow. Place it on a flat, hard surface away from direct sunlight or heat sources. Avoid using it for heavy tasks like gaming or streaming while it cools. You can also try closing unused apps running in the background. If the phone continues to overheat, check if any apps are consuming excessive resources and consider restarting the phone to refresh its system."
       ]
     }
-    
   ]
 }
