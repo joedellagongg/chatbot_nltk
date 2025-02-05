@@ -108,8 +108,8 @@
           "flicker",
           "My phone screen is frozen.",
           "black screen",
-          "How do I fix display issues?",
-          "My screen black even though my device is on?"
+          "Fix display issues",
+          "My screen black even though my device is on"
       ],
       "responses":[
           "Try restarting your device to refresh the screen.",
@@ -140,7 +140,7 @@
       "patterns":[
           "I want to know how to update my computer",
           "My phone won't update.",
-          "My software update failing?"
+          "My software update failing"
       ],
       "responses":[
           "Go to your device settings and check for available updates.",
@@ -151,7 +151,7 @@
     {
       "tag":"overheating_phone",
       "patterns":[
-          "My phone overheating?",
+          "My phone overheating",
           "Stop my phone from overheating",
           "My phone get hot while charging",
           "Cool down my phone when it's overheating"
