@@ -1,6 +1,6 @@
 {
   "intents": [
-    {
+      {
       "tag": "greeting",
       "patterns": [
         "Hi",
@@ -27,7 +27,7 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful"],
+      "patterns": ["Thanks", "Thank you", "That's helpful", "ty", "tnx"],
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
     {
@@ -38,9 +38,7 @@
         "How can I speed up my computer?"
       ],
       "responses": [
-        "Try restarting your computer.",
-        "Check for any software updates.",
-        "Make sure you don't have too many programs running at once."
+        "\nPossible solutions:\n- Try restarting your computer.\n- Check for any software updates.\n- Make sure you don't have too many programs running at once."
       ]
     },
     {
@@ -48,7 +46,8 @@
       "patterns": [
         "I can't connect to the internet",
         "Why is my internet not working?",
-        "How do I fix my internet connection?"
+        "How do I fix my internet connection?",
+        "No wifi"
       ],
       "responses": [
         "Check if your Wi-Fi is turned on.",
@@ -68,6 +67,102 @@
         "Check if the printer is connected to your computer.",
         "Try restarting your printer."
       ]
+    },
+    {
+      "tag": "troubleshoot_phone_slow",
+      "patterns": [
+        "slow phone",
+        "My phone takes too much time to charge",
+        "Apps keep crashing"
+      ],
+      "responses": [
+        "Make sure to clear your app cache data.",
+        "If your phone isn't charging, the most likely culprits are a faulty charging cable, a dirty charging port on your phone, a damaged power adapter, or a problem with the power outlet itself; try using a different charging cable and power adapter, clean the charging port on your phone, and ensure the cable is securely plugged into both the phone and adapter; if the issue persists, you may need to get your phone checked by a professional as there could be a deeper battery or hardware problem.",
+        "The first thing you should try is to restart your cell phone and start using the app again. You can also go to the App Manager and stop the app, sometimes cleaning the cache data also works. If it continues doing the same, try to uninstall the app and install it again. As it was mentioned before, sometimes the app has a lot of bugs that cause this problem."
+      ]
+    },
+    {
+      "tag": "no_sound",
+      "patterns": [
+          "There's no sound on my computer.",
+          "My phone has no audio.",
+          "I can't hear anything from my speakers",
+          "I want t fix sound problems on my computer",
+          "Hey, I'm having trouble with my audio.",
+          "The audio on my computer is not working."
+      ],
+      "responses":[
+          "Make sure your system volume and application volume are turned up and not muted.",
+          "Check your system settings to ensure the correct audio output device is selected.",
+          "Double-check that your headphones or speakers are properly plugged in and the cables aren't damaged.",
+          "Outdated audio drivers can cause issues, so try updating them through your device manager.",
+          "Try restarting the device to reset audio functionality."
+
+      ]
+    },
+    {
+      "tag":"screen_issues",
+      "patterns":[
+          "flickering",
+          "glitching",
+          "flicker",
+          "My phone screen is frozen.",
+          "black screen",
+          "Fix display issues",
+          "My screen black even though my device is on"
+      ],
+      "responses":[
+          "Try restarting your device to refresh the screen.",
+          "Update your display drivers or check for system updates.",
+          "Check for loose connections if you're using a monitor.",
+          "If your screen is frozen, try a force restart.",
+          "Ensure the brightness isn’t set to the lowest level",
+          "Check if the device is connected to a power source and the battery isn’t dead.",
+          "If using an external monitor, verify the cable connections and power."
+      ]
+    },
+    {
+      "tag":"device_full_storage",
+      "patterns":[
+          "My device says it's out of storage even after deleting files",
+          "I want to know how to free up space on my phone",
+          "I want to know how to free up space on my computer"
+         
+      ],
+      "responses":[
+          "Clear temporary files and cache.",
+          "Delete unnecessary files, apps, or photos to free up space.",
+          "Transfer large files to an external drive or cloud storage."
+      ]
+    },
+    {
+      "tag":"software_update",
+      "patterns":[
+          "I want to know how to update my computer",
+          "My phone won't update.",
+          "My software update failing"
+      ],
+      "responses":[
+          "Go to your device settings and check for available updates.",
+          "Make sure you have enough storage and battery for the update.",
+          "Ensure you have a stable internet connection while updating."
+      ]
+    },
+    {
+      "tag":"overheating_phone",
+      "patterns":[
+          "My phone overheating",
+          "Stop my phone from overheating",
+          "My phone get hot while charging",
+          "Cool down my phone when it's overheating"
+      ],
+      "responses":[
+          "Too many apps running simultaneously can increase the workload and generate heat.",
+          "Close apps running in the background to reduce workload.",
+          "A phone gets hot while charging because the battery naturally generates heat during the charging process, especially when using fast charging; however, excessive heat could indicate issues like a damaged charging cable, a worn-out battery, or too many active background apps; to fix this, try using a different charger, removing your phone case, closing unnecessary apps, avoiding direct sunlight, and checking for any potential damage to the charging port or battery.",
+          "To cool down your phone when it's overheating, turn it off to stop any processes generating heat. Remove any case or cover to allow better airflow. Place it on a flat, hard surface away from direct sunlight or heat sources. Avoid using it for heavy tasks like gaming or streaming while it cools. You can also try closing unused apps running in the background. If the phone continues to overheat, check if any apps are consuming excessive resources and consider restarting the phone to refresh its system."
+      ]
     }
+    
   ]
 }
