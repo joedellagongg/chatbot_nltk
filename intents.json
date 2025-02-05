@@ -270,7 +270,89 @@
       "Go to Settings if the app is access allowed.",
       "Allow access to use the microphone."
       ]
+    },
+    {
+      "tag": "help",
+      "patterns":[
+        "I need your help.",
+        "Need help.",
+        "Can you help me?."
+      ],
+      "responses":[
+        "How can I help you?",
+        "Sure, how can I help you?",
+        "What about"
+      ]
 
-    }
+    },
+    {
+      "tag": "no_sound",
+      "patterns": [
+          "No sound on my computer.",
+          "My phone has no audio.",
+          "I can't hear anything from my speaker.",
+          "Hey, I'm having trouble with my audio.",
+          "The audio on my computer is not working."
+      ],
+      "responses":[
+          "Make sure your system volume and application volume are turned up and not muted.",
+          "Check your system settings to ensure the correct audio output device is selected.",
+          "Double-check that your headphones or speakers are properly plugged in and the cables aren't damaged.",
+          "Outdated audio drivers can cause issues, so try updating them through your device manager.",
+          "Try restarting the device to reset audio functionality."
+
+      ]
+  },
+  {
+      "tag":"screen_issues",
+      "patterns":[
+          "My screen is flickering.",
+          "My phone screen is frozen.",
+          "Fix display issues",
+          "black screen"
+      ],
+      "responses":[
+          "Try restarting your device to refresh the screen.",
+          "Update your display drivers or check for system updates.",
+          "Check for loose connections if you're using a monitor.",
+          "If your screen is frozen, try a force restart.",
+          "Ensure the brightness isn’t set to the lowest level",
+          "Check if the device is connected to a power source and the battery isn’t dead.",
+          "If using an external monitor, verify the cable connections and power."
+      ]
+  },
+  {
+      "tag":"device_full_storage",
+      "patterns":[
+          "My device saying it's out of storage even though I deleted files?",
+          "Free up space on my phone?",
+          "Free up space on my computer?",
+          "My laptop says there’s no more storage."
+      ],
+      "responses":[
+          "Delete unnecessary files, apps, or photos to free up space.",
+          "Transfer large files to an external drive or cloud storage.",
+          "Clear temporary files and cache.",
+          "Check for duplicate files and remove them."
+      ]
+  },
+  {
+      "tag":"software_update",
+      "patterns":[
+          "Update my computer?",
+          "My phone won't update.",
+          "Update failing?",
+          "Check for updates on my device?"
+      ],
+      "responses":[
+          "Go to your device settings and check for available updates.",
+          "Make sure you have enough storage and battery for the update.",
+          "Ensure you have a stable internet connection while updating.",
+          "Restart your device and try the update again."
+      ]
+  }
+  
+    
+    
   ]
 }
