@@ -302,8 +302,8 @@
           "Try restarting the device to reset audio functionality."
 
       ]
-  },
-  {
+    },
+    {
       "tag":"screen_issues",
       "patterns":[
           "My screen is flickering.",
@@ -320,8 +320,8 @@
           "Check if the device is connected to a power source and the battery isn’t dead.",
           "If using an external monitor, verify the cable connections and power."
       ]
-  },
-  {
+    },
+    {
       "tag":"device_full_storage",
       "patterns":[
           "My device saying it's out of storage even though I deleted files?",
@@ -335,8 +335,8 @@
           "Clear temporary files and cache.",
           "Check for duplicate files and remove them."
       ]
-  },
-  {
+    },
+    {
       "tag":"software_update",
       "patterns":[
           "Update my computer?",
@@ -350,7 +350,7 @@
           "Ensure you have a stable internet connection while updating.",
           "Restart your device and try the update again."
       ]
-  }
+    }
   
     
     
