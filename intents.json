@@ -185,6 +185,24 @@
         "A phone gets hot while charging because the battery naturally generates heat during the charging process, especially when using fast charging; however, excessive heat could indicate issues like a damaged charging cable, a worn-out battery, or too many active background apps; to fix this, try using a different charger, removing your phone case, closing unnecessary apps, avoiding direct sunlight, and checking for any potential damage to the charging port or battery.",
         "To cool down your phone when it's overheating, turn it off to stop any processes generating heat. Remove any case or cover to allow better airflow. Place it on a flat, hard surface away from direct sunlight or heat sources. Avoid using it for heavy tasks like gaming or streaming while it cools. You can also try closing unused apps running in the background. If the phone continues to overheat, check if any apps are consuming excessive resources and consider restarting the phone to refresh its system."
       ]
+    },
+    {
+      "tag": "phone_issues",
+      "patterns": [
+        "my phone keep restarting on its own",
+        "My phone gets hot quickly",
+        "Why does  my phone battery drain fast",
+        "My phone freezes ofter",
+        "My phone won't turn on"
+      ],
+      "responses": [
+        "If your phone keeps restarting, check if a recently installed app is causing the issue by booting into safe mode and uninstalling suspicious apps.",
+        "If your phone gets too hot, try reducing screen brightness, closing unused apps, and avoiding direct sunlight exposure.",
+        "A fast-draining battery can be caused by background apps. Check your battery settings to see which apps are consuming the most power and disable unnecessary background processes.",
+        "If your phone freezes often, restart it and clear the cache. If the issue persists, consider resetting it to factory settings after backing up important data.",
+        "If your phone won’t turn on, try charging it for at least 30 minutes. If there’s no response, try a different charger or cable, and check if the power button is functioning correctly.",
+        "For charging issues, inspect the charging cable, adapter, and port for damage. Cleaning the port carefully can also help, as dust and debris might block proper contact."
+      ]
     }
   ]
 }
