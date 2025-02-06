@@ -10,25 +10,38 @@
         "Good day"
       ],
       "responses": [
-        "Hello I'm TroubleTech, thanks for visiting",
-        "Good to see you again, This is TroubleTech",
-        "Hi there I'm TroubleTech, how can I help?"
+        "Hello! I'm TroubleTech, your virtual assistant. How can I help you today with your technical issues?",
+        "Good to see you again! I'm here to assist you with any troubleshooting or tech-related concerns you might have.",
+        "Hi there! I'm TroubleTech. Let me know if you need help with slow devices, internet issues, software updates, or anything else."
+      ]
+    },
+    {
+      "tag": "response_to_hello",
+      "patterns": [
+        "How are you?",
+        "how are you doing?",
+        "what's up?",
+        "how's it going?"
       ],
-      "context_set": ""
+      "responses": ["I'm bot. i don't have feelings, but thank you for asking."]
     },
     {
       "tag": "goodbye",
       "patterns": ["Bye", "See you later", "Goodbye"],
       "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
+        "Goodbye! If you ever need tech support again, don't hesitate to ask. Have a great day!",
+        "Take care! I hope I was able to help. Come back anytime if you need assistance.",
+        "Bye! Remember, technology can be tricky, but I'm always here to guide you whenever you need help."
       ]
     },
     {
       "tag": "thanks",
       "patterns": ["Thanks", "Thank you", "That's helpful", "ty", "tnx"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      "responses": [
+        "You're very welcome! I'm always here to assist with any tech problems you have.",
+        "Glad I could help! If you ever need more guidance, feel free to ask.",
+        "No problem at all! Troubleshooting technology can be frustrating, but I'm here to make it easier for you."
+      ]
     },
     {
       "tag": "troubleshoot_slow_computer",
@@ -38,7 +51,8 @@
         "How can I speed up my computer?"
       ],
       "responses": [
-        "\nPossible solutions:\n- Try restarting your computer.\n- Check for any software updates.\n- Make sure you don't have too many programs running at once."
+        "A slow computer can be caused by many factors. Try restarting your device, closing unnecessary programs, updating your software, and running a malware scan. If your storage is almost full, consider deleting unused files or moving them to an external drive.",
+        "To speed up your computer, ensure that your operating system and drivers are up to date. Also, check your startup programs and disable those you don't need. Adding more RAM or switching to an SSD can significantly boost performance."
       ]
     },
     {
@@ -47,12 +61,16 @@
         "I can't connect to the internet",
         "Why is my internet not working?",
         "How do I fix my internet connection?",
-        "No wifi"
+        "No Wi-Fi connection",
+        "My internet keeps disconnecting",
+        "Wi-Fi is connected but no internet",
+        "Why is my Wi-Fi so slow?",
+        "My internet is not working properly",
+        "I have no internet access",
+        "Can't browse the web"
       ],
       "responses": [
-        "Check if your Wi-Fi is turned on.",
-        "Restart your router.",
-        "Check if other devices can connect to the internet."
+        "If you're experiencing internet issues, start by restarting your modem and router. Check if other devices are able to connect to the network. If not, contact your Internet Service Provider (ISP) to check for outages. Also, ensure your device's Wi-Fi or mobile data is enabled and try reconnecting. \n Slow or unstable internet can be caused by interference, outdated hardware, or too many connected devices. Try moving closer to the router, switching to a less congested Wi-Fi channel, or using a wired connection for better stability."
       ]
     },
     {
@@ -63,22 +81,22 @@
         "How do I fix my printer?"
       ],
       "responses": [
-        "Make sure your printer is turned on.",
-        "Check if the printer is connected to your computer.",
-        "Try restarting your printer."
+        "First, check if your printer is powered on and properly connected to your computer or network. Ensure there is enough paper, ink, or toner. If the issue persists, try reinstalling the printer drivers or running the troubleshooting tool on your device.",
+        "If your printer is not responding, check the print queue for stuck jobs. Restart both the printer and the computer, and make sure you have the correct printer selected. If you're using a wireless printer, verify the connection and reconfigure it if needed."
       ]
     },
     {
       "tag": "troubleshoot_phone_slow",
       "patterns": [
-        "slow phone",
-        "My phone takes too much time to charge",
-        "Apps keep crashing"
+        "My smartphone is running slow.",
+        "Why is my smartphone lagging?",
+        "Apps keep crashing on my smartphone.",
+        "My phone is charging slowly.",
+        "My phone takes too much time to charge.",
+        "How can I fix slow performance on my phone?"
       ],
       "responses": [
-        "Make sure to clear your app cache data.",
-        "If your phone isn't charging, the most likely culprits are a faulty charging cable, a dirty charging port on your phone, a damaged power adapter, or a problem with the power outlet itself; try using a different charging cable and power adapter, clean the charging port on your phone, and ensure the cable is securely plugged into both the phone and adapter; if the issue persists, you may need to get your phone checked by a professional as there could be a deeper battery or hardware problem.",
-        "The first thing you should try is to restart your cell phone and start using the app again. You can also go to the App Manager and stop the app, sometimes cleaning the cache data also works. If it continues doing the same, try to uninstall the app and install it again. As it was mentioned before, sometimes the app has a lot of bugs that cause this problem."
+        "** Phone Performance & Charging Troubleshooting Guide** \n\nIf your phone is slow or apps keep crashing, try these steps:\n\n### Improving Phone Speed\n1. **Close Unused Apps** – Running too many background apps can slow down performance.\n2. **Clear Cache Data** – Go to Settings > Storage and clear cache files to free up space.\n3. **Check Storage Space** – Ensure your device has at least 10-20% free storage.\n4. **Restart Your Phone** – A simple reboot can fix minor lag issues.\n5. **Disable Animations** – Reduce UI animations in developer options for a smoother experience.\n6. **Update Your Software** – Outdated OS versions can cause slow performance and app crashes.\n7. **Reset App Preferences** – This restores default settings for apps without deleting data.\n\n### Fixing App Crashes\n- **Update or Reinstall Apps** – Bugs in outdated versions can cause crashes.\n- **Clear App Cache** – Go to Settings > Apps > [App Name] > Storage > Clear Cache.\n- **Check for Software Updates** – Some crashes are fixed in system updates.\n- **Disable Battery Optimization for Apps** – Some apps may be restricted from running properly in the background.\n\n### Solving Slow Charging Issues\n- **Use an Original or Certified Charger** – Low-quality cables or adapters can slow down charging.\n- **Avoid Charging Through a Computer USB Port** – Use a wall adapter for faster charging.\n- **Check Charging Cable & Adapter** : Look for signs of damage or wear.\n- **Enable Airplane Mode While Charging** : This reduces background activity and speeds up charging.\n- **Avoid Using the Phone While Charging** : Running apps while charging can slow down the process.\n- **Clean the Charging Port** : Dust or lint in the charging port may cause slow charging.\n\nIf the problem persists, consider checking your **battery health** or **visiting a repair center** for further diagnosis."
       ]
     },
     {
@@ -87,16 +105,12 @@
         "There's no sound on my computer.",
         "My phone has no audio.",
         "I can't hear anything from my speakers",
-        "I want t fix sound problems on my computer",
+        "I want to fix sound problems on my computer",
         "I'm having trouble with my audio.",
         "The audio on my computer is not working."
       ],
       "responses": [
-        "Make sure your system volume and application volume are turned up and not muted.",
-        "Check your system settings to ensure the correct audio output device is selected.",
-        "Double-check that your headphones or speakers are properly plugged in and the cables aren't damaged.",
-        "Outdated audio drivers can cause issues, so try updating them through your device manager.",
-        "Try restarting the device to reset audio functionality."
+        "## No Sound Troubleshooting Guide\n\nIf your device has no sound, follow these steps to diagnose and fix the issue:\n\n### Basic Checks\n1. **Check Volume Settings** – Ensure your device is not muted and the volume is turned up.\n2. **Select the Correct Output Device** – Go to your sound settings and verify that the correct speaker or headphone is selected.\n3. **Try a Different Audio Source** – Play a different video, music file, or system sound to confirm the issue isn't with the media itself.\n4. **Restart Your Device** – A simple reboot can fix minor glitches.\n\n### PC/Laptop Troubleshooting\n- **Update Audio Drivers** – Outdated or corrupted drivers can cause sound issues. Update them through **Device Manager** (Windows) or **System Preferences** (Mac).\n- **Run the Audio Troubleshooter** – On Windows, go to **Settings > System > Sound > Troubleshoot**.\n- **Check Sound Settings** – Ensure your device isn’t set to 'Digital Output' or another incorrect source.\n- **Try an External Speaker or Headphones** – This helps determine if the issue is with your speakers or the internal sound system.\n\n### Mobile Device Troubleshooting\n- **Disable Bluetooth** – If sound is being sent to a paired Bluetooth device, disconnect it.\n- **Clear App Cache** – If audio issues occur in a specific app, try clearing its cache.\n- **Check for Do Not Disturb Mode** – Some devices mute sounds when this mode is enabled.\n\n### External Speakers or Headphones\n- Ensure they are properly connected and plugged into the right port.\n- If using Bluetooth, **disconnect and reconnect** the device.\n- **Try another device** – Test the speakers/headphones on a different computer or phone to rule out hardware failure.\n\n### Advanced Fixes\n- **Check for Windows or macOS Updates** – Some updates include important sound fixes.\n- **Uninstall and Reinstall Audio Drivers** – If updates don’t work, try uninstalling and reinstalling the audio driver.\n- **Reset System Sound Settings** – On Windows, you can reset all sound settings to default from the Control Panel.\n\nIf none of these steps work, there may be a **hardware issue** with your device. You may need professional repair or replacement."
       ]
     },
     {
@@ -108,18 +122,29 @@
         "My phone screen is frozen.",
         "black screen",
         "Fix display issues",
-        "My screen black even though my device is on"
+        "My screen is black even though my device is on"
       ],
       "responses": [
-        "If you're experiencing screen flickering, start by restarting your device to give it a fresh start. If the problem persists, check for any pending software updates, as these can sometimes address display-related bugs or glitches. If you're using a monitor, make sure all cables are securely connected, and try using a different cable or port to rule out hardware issues.",
-        "If your display is glitching, it could be a result of outdated software or a malfunctioning graphics driver. Try updating your display drivers through your device's settings or check for any available system updates. If the problem happens with specific apps, make sure they're updated too, as some glitches can be app-specific. Additionally, performing a device restart can help resolve temporary software issues.",
-        "A flickering screen might be caused by a mismatch in display settings or a power supply issue. If your screen flickers only when you're running certain apps or programs, try closing them to see if that resolves the issue. If your device is overheating, it could also cause flickering, so check if it's excessively hot and allow it to cool down. If the issue is persistent, consider adjusting your screen refresh rate or resolution settings to match the device's specifications.",
-        "If your phone screen is frozen, a force restart can often solve the issue. On most smartphones, you can do this by holding down the power button and volume down button (or the corresponding combination for your device) for about 10-15 seconds. If the phone continues to freeze, you might want to check for software updates or perform a factory reset as a last resort if the issue persists.",
-        "If you're seeing a black screen but the device is still on, it could indicate an issue with the display itself or a software malfunction. Start by adjusting the brightness settings—sometimes the display might be on but too dim to see. If that doesn't help, try restarting the device or performing a soft reset. In cases where the screen remains black, a screen replacement or repair might be necessary if it's a hardware issue.",
-        "To fix display issues, ensure that your screen's brightness settings are adjusted appropriately, and check for any potential screen protectors or cases that might be obstructing the display. If you're experiencing blackouts or flickering, check whether the device is connected to a power source. If your battery is low or dead, it might cause display issues. Try charging your device fully and restarting it to see if that resolves the problem.",
-        "If you're using an external monitor and the screen stays black, check the power connection first—ensure the monitor is turned on and the cables are securely plugged in. Try using different cables or ports, as faulty cables can lead to screen issues. If the issue persists, test the monitor on another device to determine if the problem lies with the monitor or the original device."
+        "Screen flickering or glitches can be caused by outdated display drivers, loose connections, or a failing screen. Try updating your display drivers, adjusting refresh rates, or testing the screen on another monitor.",
+        "If your phone screen is frozen, perform a forced restart by holding the power and volume buttons simultaneously for a few seconds. If the issue continues, check for software updates or reset the device to factory settings."
       ]
     },
+
+    {
+      "tag": "monitor_not_working",
+      "patterns": [
+        "My monitor is not working",
+        "My screen is not working",
+        "Why isn't my monitor turning on?",
+        "Why is my monitor black?",
+        "I can't see anything on my monitor",
+        "My monitor is not displaying anything"
+      ],
+      "responses": [
+        "**If your monitor isn't working, try the following steps:**\n\n1. **Check the Power**: Ensure the monitor is plugged into a power source and the power button is on. If it's a laptop, check if it's charging.\n\n2. **Check the Cable Connections**: Make sure the video cable (HDMI, VGA, DisplayPort, etc.) is securely connected between the monitor and your computer. If the cable is damaged, try replacing it.\n\n3. **Test with Another Device**: Connect the monitor to another computer or device to rule out issues with the monitor itself.\n\n4. **Adjust Brightness and Contrast**: It's possible that the monitor's brightness or contrast settings are too low, making it appear as if it's not working.\n\n5. **Check the Graphics Card**: If you're using a dedicated graphics card, make sure it's properly seated in its slot. Also, check if the correct input source is selected on the monitor (e.g., HDMI 1, VGA).\n\n6. **Restart Your Computer**: Sometimes a simple restart can resolve display issues, especially if it's related to a software glitch.\n\n7. **Test with Another Monitor**: If you have access to another monitor, try using it with your computer. If the second monitor works, the issue is likely with your original monitor.\n\n8. **Update or Reinstall Drivers**: Outdated or corrupted graphics drivers can cause display issues. Ensure your drivers are up to date, or try reinstalling them.\n\n9. **Check for Hardware Issues**: If none of the above solutions work, there may be a hardware issue with your monitor or your computer's graphics card. Consider reaching out to a technician for further assistance."
+      ]
+    },
+
     {
       "tag": "device_full_storage",
       "patterns": [
@@ -134,56 +159,32 @@
         "What should I do when my computer is running out of storage?"
       ],
       "responses": [
-        "It sounds frustrating when you're out of space! First, check for temporary files or cached data—these often take up a lot of space without you even knowing. You can clear them through your device's settings or app preferences.",
-        "If you're still having trouble, try deleting any apps, files, or photos you no longer need. Alternatively, consider transferring large files like videos or documents to an external drive or cloud storage. This will help free up local space.",
-        "For phones and computers, many devices have built-in storage managers that can guide you through the cleanup process. You could also look into using storage optimization tools that automatically remove files you don't need, like duplicate files or unused app data.",
-        "If your storage is consistently full and you're looking for better performance, consider upgrading to an SSD. Replacing an old hard drive with an SSD can dramatically speed up your device while giving you more space. You can back up your important data and use the old storage as a personal backup drive or external storage. This way, you keep your files safe while improving your system's speed and efficiency!"
+        "To free up storage, delete unnecessary files, clear temporary data, and remove unused applications. Consider moving large files to an external drive or cloud storage to create more space.",
+        "Check if there are duplicate files, old downloads, or unused apps taking up space. Using storage management tools on your device can help identify what's consuming the most storage and suggest ways to clear it."
       ]
     },
     {
       "tag": "software_update",
       "patterns": [
         "I want to know how to update my computer",
+        "How do I update my phone software?"
+      ],
+      "responses": [
+        "To update your system, go to settings and check for software updates. Make sure you have enough storage and battery before starting the update. A stable internet connection is also necessary to avoid interruptions."
+      ]
+    },
+    {
+      "tag": "error_update",
+      "patterns": [
+        "I'm getting an error when updating my software",
         "My phone won't update.",
-        "My software update failing"
+        "My software update is failing",
+        "I can't install the latest update",
+        "The update is stuck at a certain percentage",
+        "My system update is not working"
       ],
       "responses": [
-        "Go to your device settings and check for available updates.",
-        "Make sure you have enough storage and battery for the update.",
-        "Ensure you have a stable internet connection while updating."
-      ]
-    },
-    {
-      "tag": "device_component_upgrade",
-      "patterns": [
-        "My device is slow",
-        "Upgrade my computer parts",
-        "Replace old components for better performance",
-        "My storage is full and slowing down my device",
-        "What to do if my battery drains fast?",
-        "My laptop is lagging, how can I fix it?"
-      ],
-      "responses": [
-        "If your device is slowing down, it might be time to upgrade some key components. One of the best upgrades is replacing an old hard disk drive (HDD) with a solid-state drive (SSD), which can drastically improve boot times and overall speed. If your device supports it, adding more RAM can also enhance multitasking performance, making your computer run more smoothly when handling multiple apps or browser tabs. If your processor is outdated and slowing things down, you may want to consider upgrading it, but be sure to check compatibility with your motherboard first.",
-        "A worn-out battery can cause your phone or laptop to drain quickly, overheat, or even shut down unexpectedly. If your device is no longer holding a charge as well as it used to, replacing the battery can restore its usability. Before upgrading, check your battery health in your device settings to confirm if it's degraded. Using an official or high-quality replacement battery is essential for safety and longevity. If your device has a non-removable battery, you may need professional help to replace it properly.",
-        "If your storage is full and your device is running slowly, upgrading to a larger and faster storage drive can make a significant difference. An SSD is a great option for boosting speed and performance compared to a traditional HDD. You can also expand storage by using an external hard drive or cloud storage to offload large files such as videos, photos, and documents. If upgrading isn’t an option, try deleting unnecessary files, clearing cache, or using disk cleanup tools to free up space and improve system performance.",
-        "Overheating can cause performance issues and reduce the lifespan of your device. If your laptop or desktop is getting too hot, consider upgrading its cooling system. Cleaning the internal fans, replacing old thermal paste on the CPU, and adding extra cooling solutions like additional fans or a better heatsink can help regulate temperature. For laptops, using a cooling pad can also improve airflow and prevent overheating during heavy usage. Regular maintenance, such as dusting out vents and ensuring proper airflow, can keep your device running at optimal temperatures.",
-        "If you're into gaming or high-performance tasks such as video editing or 3D rendering, upgrading your graphics card (GPU) and increasing your RAM can drastically improve performance. A more powerful GPU will provide smoother visuals and faster rendering, while additional RAM will help with multitasking and data-heavy applications. Before upgrading, make sure your power supply unit (PSU) can support the new components and that your system has enough space and compatibility for the upgrade. If you're unsure, checking system requirements or consulting a professional can help you make the right choice."
-      ]
-    },
-    {
-      "tag": "overheating_phone",
-      "patterns": [
-        "My phone overheating",
-        "Stop my phone from overheating",
-        "My phone get hot while charging",
-        "Cool down my phone when it's overheating"
-      ],
-      "responses": [
-        "Too many apps running simultaneously can increase the workload and generate heat.",
-        "Close apps running in the background to reduce workload.",
-        "A phone gets hot while charging because the battery naturally generates heat during the charging process, especially when using fast charging; however, excessive heat could indicate issues like a damaged charging cable, a worn-out battery, or too many active background apps; to fix this, try using a different charger, removing your phone case, closing unnecessary apps, avoiding direct sunlight, and checking for any potential damage to the charging port or battery.",
-        "To cool down your phone when it's overheating, turn it off to stop any processes generating heat. Remove any case or cover to allow better airflow. Place it on a flat, hard surface away from direct sunlight or heat sources. Avoid using it for heavy tasks like gaming or streaming while it cools. You can also try closing unused apps running in the background. If the phone continues to overheat, check if any apps are consuming excessive resources and consider restarting the phone to refresh its system."
+        "**If you're experiencing issues updating your software, follow these steps:**\n\n1. **Check Storage Space**: Ensure your device has enough free storage. System updates require additional space to download and install, so try deleting unused apps or clearing cache files before retrying the update.\n\n2. **Stable Internet Connection**: A stable internet connection is crucial for software updates. If your update is failing, switch to a stronger Wi-Fi connection and avoid using mobile data. Restart your router and reconnect your device to the network if the download is stuck.\n\n3. **Battery Level**: Low battery can prevent updates from installing properly. Ensure your device has at least 50% battery, or keep it plugged in during the update process. Some updates will not proceed unless your device is connected to a charger.\n\n4. **Update Stuck at a Certain Percentage**: If the update gets stuck, restart your device and try checking for updates again.\n\n5. **Clear System Update Cache**: For Android devices, clearing the system update cache may help resolve the issue. For computers, using a wired connection can sometimes resolve issues.\n\n6. **Error Messages**: If you're receiving an error message during the update, take note of the error code and search for troubleshooting steps specific to that code.\n\n7. **Server Overload**: Some errors may indicate server overload. In this case, you may need to wait and try again later.\n\n8. **Manual Download**: If the update keeps failing, consider downloading it manually from the official website or use a PC-based update tool like iTunes (for iPhones) or Samsung Smart Switch (for Samsung devices).\n\n9. **Factory Reset**: In extreme cases, a factory reset may be required if the update process is corrupted. Ensure that you back up all important data before proceeding with this.\n\n10. **Contact Support**: If the issue persists, contact the device manufacturer or visit an authorized service center for further assistance."
       ]
     }
   ]

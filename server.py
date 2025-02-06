@@ -40,14 +40,12 @@ vectorizer = CountVectorizer().fit(patterns)
 pattern_vectors = vectorizer.transform(patterns)
 
 def get_response(user_input):
-    """Match user input to intents using cosine similarity and return a response."""
     preprocessed_input = preprocess_text(user_input)
     user_vector = vectorizer.transform([preprocessed_input])
-
+    print(user_vector)
     similarity = cosine_similarity(user_vector, pattern_vectors)
     max_similarity_idx = similarity.argmax()
     max_similarity_score = similarity[0, max_similarity_idx]
-    
     
     # print("pettern-vectors: ",pattern_vectors)
     # print("user-vectors: ",user_vector)
@@ -56,6 +54,7 @@ def get_response(user_input):
     
     if max_similarity_score > 0.3:
         tag = tags[max_similarity_idx]
+        print(tag)
         return random.choice(responses[tag])
     else:
         return "I'm sorry, I don't understand. Can you rephrase?"
