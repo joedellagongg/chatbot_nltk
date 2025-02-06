@@ -186,6 +186,24 @@
       "responses": [
         "**If you're experiencing issues updating your software, follow these steps:**\n\n1. **Check Storage Space**: Ensure your device has enough free storage. System updates require additional space to download and install, so try deleting unused apps or clearing cache files before retrying the update.\n\n2. **Stable Internet Connection**: A stable internet connection is crucial for software updates. If your update is failing, switch to a stronger Wi-Fi connection and avoid using mobile data. Restart your router and reconnect your device to the network if the download is stuck.\n\n3. **Battery Level**: Low battery can prevent updates from installing properly. Ensure your device has at least 50% battery, or keep it plugged in during the update process. Some updates will not proceed unless your device is connected to a charger.\n\n4. **Update Stuck at a Certain Percentage**: If the update gets stuck, restart your device and try checking for updates again.\n\n5. **Clear System Update Cache**: For Android devices, clearing the system update cache may help resolve the issue. For computers, using a wired connection can sometimes resolve issues.\n\n6. **Error Messages**: If you're receiving an error message during the update, take note of the error code and search for troubleshooting steps specific to that code.\n\n7. **Server Overload**: Some errors may indicate server overload. In this case, you may need to wait and try again later.\n\n8. **Manual Download**: If the update keeps failing, consider downloading it manually from the official website or use a PC-based update tool like iTunes (for iPhones) or Samsung Smart Switch (for Samsung devices).\n\n9. **Factory Reset**: In extreme cases, a factory reset may be required if the update process is corrupted. Ensure that you back up all important data before proceeding with this.\n\n10. **Contact Support**: If the issue persists, contact the device manufacturer or visit an authorized service center for further assistance."
       ]
+    },
+    {
+      "tag": "phone_issues",
+      "patterns": [
+        "my phone keep restarting on its own",
+        "My phone gets hot quickly",
+        "Why does  my phone battery drain fast",
+        "My phone freezes ofter",
+        "My phone won't turn on"
+      ],
+      "responses": [
+        "If your phone keeps restarting, check if a recently installed app is causing the issue by booting into safe mode and uninstalling suspicious apps.",
+        "If your phone gets too hot, try reducing screen brightness, closing unused apps, and avoiding direct sunlight exposure.",
+        "A fast-draining battery can be caused by background apps. Check your battery settings to see which apps are consuming the most power and disable unnecessary background processes.",
+        "If your phone freezes often, restart it and clear the cache. If the issue persists, consider resetting it to factory settings after backing up important data.",
+        "If your phone won’t turn on, try charging it for at least 30 minutes. If there’s no response, try a different charger or cable, and check if the power button is functioning correctly.",
+        "For charging issues, inspect the charging cable, adapter, and port for damage. Cleaning the port carefully can also help, as dust and debris might block proper contact."
+      ]
     }
   ]
 }

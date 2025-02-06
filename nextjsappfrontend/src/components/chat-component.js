@@ -141,6 +141,7 @@ export default function Home() {
       >
         <input
           className="w-[500px] pl-5 m-5 h-[40px] rounded-full"
+          placeholder="Ask something about troubleshoot"
           value={inputValue}
           autoFocus={true}
           onChange={(e) => setInputValue(e.target.value)}
