@@ -1,30 +1,24 @@
 "use client";
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axiosInstance from "@/services/endpoint";
 import { IoIosSend } from "react-icons/io";
 import { FaRobot } from "react-icons/fa";
 import { BsPersonFill } from "react-icons/bs";
-// import { faker } from "@faker-js/faker";
-// const Chats = Array.from({ length: 100 }, (_, index) => ({
-//   id: index % 2 === 0 ? 1 : 2,
-//   message: faker.hacker.phrase(),
-// }));
 
 export default function Home() {
   const [Chats, setChats] = useState([]);
   const [inputValue, setInputValue] = useState("");
+  const [isTyping, setIsTyping] = useState(false);
 
-  // useEffect(() => {
-  //   const savedChats = localStorage.getItem("chatMessages");
-  //   if (savedChats) {
-  //     setChats(JSON.parse(savedChats));
-  //   }
-  // }, []);
+  useEffect(() => {
+    const initialGreeting = {
+      id: Date.now(),
+      response: "Hi I'am TroubleTech! How can I assist you today?",
+      sender: "bot",
+    };
 
-  // useEffect(() => {
-  //   localStorage.setItem("chatMessages", JSON.stringify(Chats));
-  // }, [Chats]);
+    setChats([initialGreeting]);
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -33,7 +27,7 @@ export default function Home() {
     const userMessage = {
       id: Date.now(),
       response: inputValue,
-      sender: "user", // Specify the sender
+      sender: "user",
     };
     setChats((prevChats) => {
       const updatedChats = [...prevChats, userMessage];
@@ -41,35 +35,45 @@ export default function Home() {
       return updatedChats;
     });
 
+    setIsTyping(true);
+
     try {
       const res = await axiosInstance.post("/chat", { message: inputValue });
-      const botMessage = {
-        id: Date.now() + 1,
-        response: res.data.response,
-        sender: "bot", // Specify the sender
-      };
 
-      setChats((prevChats) => {
-        const updatedChats = [...prevChats, botMessage];
-        localStorage.setItem("chatMessages", JSON.stringify(updatedChats));
-        return updatedChats;
-      });
+      setTimeout(() => {
+        const botMessage = {
+          id: Date.now() + 1,
+          response: res.data.response,
+          sender: "bot",
+        };
 
-      setInputValue("");
+        setChats((prevChats) => {
+          const updatedChats = [...prevChats, botMessage];
+          localStorage.setItem("chatMessages", JSON.stringify(updatedChats));
+          return updatedChats;
+        });
+
+        setIsTyping(false);
+
+        setInputValue("");
+      }, 2000);
     } catch (error) {
       console.error("Error:", error);
+      setIsTyping(false);
     }
   };
 
   return (
     <div className="h-screen fixed w-full bg-gray-700 flex justify-center">
-      <div className="overflow-auto no-scrollbar">
-        <header className="bg-red-300 w-full h-20">Hello</header>
-        <div className="bg-gray-900 overflow-auto w-[900px]">
-          <div className="flex flex-col space-y-4 p-2">
+      <div className="overflow-auto no-scrollbar h-full">
+        <header className=" bg-gray-900 text-white w-full h-[10%] p-6 text-3xl font-bold">
+          TroubleTech
+        </header>
+        <div className="bg-gray-900 h-[90%] overflow-auto no-scrollbar flex flex-col-reverse w-[900px]">
+          <div className="flex flex-col space-y-4 p-2 pb-40">
             {Chats.map((chat) => (
               <div
-                key={chat.id} // Use the unique id as the key
+                key={chat.id}
                 className={`flex ${
                   chat.sender === "user" ? "flex-row-reverse" : "flex-row"
                 } m-2`}
@@ -86,19 +90,33 @@ export default function Home() {
                   />
                 )}
                 <div
-                  className={`max-w-[600px] p-2 overflow-auto rounded-md ${
+                  className={`max-w-[600px] p-2 flex items-center overflow-auto rounded-md ${
                     chat.sender === "user"
                       ? "bg-slate-500 text-white"
-                      : "bg-green-500 text-black"
+                      : "bg-green-300 text-black"
                   }`}
                 >
                   {chat.response}
                 </div>
               </div>
             ))}
-            {""}
+
+            {isTyping && (
+              <div className="flex m-2">
+                <FaRobot
+                  className="h-10 w-10 m-2 border-2 border-solid bg-white flex items-center justify-center rounded-full"
+                  size={20}
+                />
+                <div className="max-w-[600px] p-2 flex items-center text-white rounded-md">
+                  <div className="flex flex-row gap-2">
+                    <div className="w-2 h-2 rounded-full bg-white animate-bounce"></div>
+                    <div className="w-2 h-2 rounded-full bg-white animate-bounce [animation-delay:-.3s]"></div>
+                    <div className="w-2 h-2 rounded-full bg-white animate-bounce [animation-delay:-.5s]"></div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
-          <div className="h-[120px]" />
         </div>
       </div>
 
@@ -113,7 +131,7 @@ export default function Home() {
         />
         <button
           type="submit"
-          className="h-10 w-10 m-5 bg-white rounded-full flex justify-center items-center"
+          className="h-10 w-10 m-5 ml-0 bg-white rounded-full flex justify-center items-center"
         >
           <IoIosSend size={24} />
         </button>
