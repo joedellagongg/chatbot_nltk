@@ -41,9 +41,15 @@ export default function Home() {
       const res = await axiosInstance.post("/chat", { message: inputValue });
 
       setTimeout(() => {
+        const formattedResponse = res.data.response
+          .replace(/### (.*?)\n/g, "<h3>$1</h3>")
+          .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+          .replace(/\*(.*?)\*/g, "<em>$1</em>")
+          .replace(/\n/g, "<br/>");
+
         const botMessage = {
           id: Date.now() + 1,
-          response: res.data.response,
+          response: formattedResponse,
           sender: "bot",
         };
 
@@ -56,9 +62,18 @@ export default function Home() {
         setIsTyping(false);
 
         setInputValue("");
-      }, 2000);
+      }, 500);
     } catch (error) {
-      console.error("Error:", error);
+      const botMesage = {
+        id: Date.now() + 1,
+        response: "Network Error! Please Try Again",
+        sender: "bot",
+      };
+      setChats((prevChats) => {
+        const updatedChats = [...prevChats, botMesage];
+        localStorage.setItem("chatMessages", JSON.stringify(updatedChats));
+        return updatedChats;
+      });
       setIsTyping(false);
     }
   };
@@ -89,15 +104,15 @@ export default function Home() {
                     size={20}
                   />
                 )}
+
                 <div
-                  className={`max-w-[600px] p-2 flex items-center overflow-auto rounded-md ${
+                  className={`max-w-[600px] p-2 items-center overflow-auto rounded-md ${
                     chat.sender === "user"
                       ? "bg-slate-500 text-white"
                       : "bg-green-300 text-black"
                   }`}
-                >
-                  {chat.response}
-                </div>
+                  dangerouslySetInnerHTML={{ __html: chat.response }}
+                ></div>
               </div>
             ))}
 
@@ -128,6 +143,7 @@ export default function Home() {
           className="w-[500px] pl-5 m-5 h-[40px] rounded-full"
           placeholder="Ask something about troubleshoot"
           value={inputValue}
+          autoFocus={true}
           onChange={(e) => setInputValue(e.target.value)}
         />
         <button
