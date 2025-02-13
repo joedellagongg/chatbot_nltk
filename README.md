@@ -18,6 +18,7 @@ pip install scikit-learn
 ## Run the Program
 ```bash
 python Chatterbot.py
+python server.py
 ```
 
 
